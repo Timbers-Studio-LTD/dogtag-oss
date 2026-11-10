@@ -1,0 +1,21 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "dogtag",
+	"main": "src/mod.ts",
+	"compatibility_date": "2026-10-23",
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"d1_databases": [
+		{
+			"binding": "DATABASE",
+			"database_name": "dogtag",
+			"database_id": "9c645e76-fc86-4637-b653-92aabfcef6f1"
+		}
+	]
+}
